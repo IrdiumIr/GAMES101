@@ -17,6 +17,9 @@
 * Key frame Animation
 * Mass-spring System
 
+## Why study Computer Graphics?
+
+Applications: ***Video Games***(My interest), Movies, Animations, Design, Visualization, VR&AR, Digital Illustration, Simulation, GUI, Typography
 ## NOT INCLUDE
 ***OpenGL / DirectX / Vulkan / syntax of Shaders / Graphics APIs / Maya / 3DS MAX / Blender, or VR / game development using Unity / Unreal Engine*** *(learn by myself)*
 
