@@ -49,4 +49,4 @@
 * $AA^{-1} =A^{-1}A=I$
 * $(AB)^{-1}=B^{-1}A^{-1}$
 * Cross product $\Rightarrow$ Matrix $\times$ Vector
-    - $\vec{a}\times\vec{b}=A^*b=\begin{pmatrix}0&-{z_a}&y_a\\z_a&0&-{x_a}\\-{y_a}&x_a&0\\\end{pmatrix}\begin{pmatrix}x_b\\y_b\\z_b\end{pmatrix}$
+    - $$\vec{a}\times\vec{b}=A^*b=\begin{pmatrix}0&-{z_a}&y_a\\z_a&0&-{x_a}\\-{y_a}&x_a&0\\\end{pmatrix}\begin{pmatrix}x_b\\y_b\\z_b\end{pmatrix}$$
