@@ -38,7 +38,7 @@
       - $\overrightarrow{AB}\times\overrightarrow{AP}>0\Rightarrow P$ is at left side of $AB$
       - $\overrightarrow{BC}\times\overrightarrow{BP}>0\Rightarrow P$ is at left side of $BC$
       - $P$ is at left side of $CA$
-      - $\therefore P$ is inside $\triangle ABC$
+      - Thus, $P$ is inside $\triangle ABC$
       - $P$ is always at **left / right** side of $AB/BC/CA$
 ## Matrices
 * In Graphics, pervasively used to represent **transformations**
