@@ -1,21 +1,17 @@
-# GAMES101-Lecture2
-## Review of Linear Algebra
->### References
->* Chapter2 Miscellaneous Math
->* Chapter5 Linear Algebra
+# GAMES101-Lecture3
+## Transformation
+
 ***
-## Graphics' Dependencies
-* Basic Mathematics
-    - Linear Algebra, Calculus, Statistics
-* Basic Physics
-    - Optics, Mechanics
-* Misc
-    - Signal processing
-    - Numerical analysis
-* Aesthetics(美学)
-## Vectors
-* 向量的定义，归一化，求和，坐标表示，长度
-* ***Dot product***
+## Main Topics
+* Why Transformation
+    - Modeling
+    - Viewing
+* 2D Transformaitons
+* Homogeneous coordinates
+## 2D Transformations
+* Representing transformations using matrices
+* Rotation, scale, shear
+### Scale
     - $\vec{a}\cdot\vec{b}=\parallel\vec{a}\parallel\parallel\vec{b}\parallel\cos\theta$
     - $\cos\theta=\hat{a}\cdot\hat{b}$ (*for unit vectors*)
 * Dot product in Graphics
@@ -37,8 +33,7 @@
     - Determine **inside / outside**
       - $\overrightarrow{AB}\times\overrightarrow{AP}>0\Rightarrow P$ is at left side of $AB$
       - $\overrightarrow{BC}\times\overrightarrow{BP}>0\Rightarrow P$ is at left side of $BC$
-      - $P$ is at left side of $CA$
-      - $\therefore P$ is inside $\triangle ABC$
+      - $P$ is at left side of $CA\quad\therefore P$ is inside $\triangle ABC$
       - $P$ is always at **left / right** side of $AB/BC/CA$
 ## Matrices
 * In Graphics, pervasively used to represent **transformations**
