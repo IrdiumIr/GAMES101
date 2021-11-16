@@ -26,7 +26,7 @@
     - Determind fowward / backward(dot product > or < 0)
 * Dot product for projection
     - $\vec{b}_\perp$ : **Projection** of $\vec{b}$ onto $\vec{a}$
-    - $\vec{b}_\perp=k\hat{a}=\parallel\vec{b}_\perp\parallel\hat{a}=\parallel\vec{b}\parallel\cos\theta\cdot\hat{a}$ *(along $\hat{a}$)*
+    - $\vec{b}_\perp=k\cdot\hat{a}=\parallel\vec{b}_\perp\parallel\cdot\hat{a}=\parallel\vec{b}\parallel\cos\theta\cdot\hat{a}$ *(along $\hat{a}$)*
 * ***Cross product***
     - $\parallel\vec{a}\times\vec{b}\parallel=\parallel\vec{a}\parallel\parallel\vec{b}\parallel\sin\phi$
     - Cross product is **orthogonal** to 2 initial vectors
