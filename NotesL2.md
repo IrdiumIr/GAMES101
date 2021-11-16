@@ -37,7 +37,7 @@
     - Determine **inside / outside**
       - $\overrightarrow{AB}\times\overrightarrow{AP}>0\Rightarrow P$ is at left side of $AB$
       - $\overrightarrow{BC}\times\overrightarrow{BP}>0\Rightarrow P$ is at left side of $BC$
-      - $P$ is at left side of $CA$
+      - Also, $P$ is at left side of $CA$
       - Thus, $P$ is inside $\triangle ABC$
       - $P$ is always at **left / right** side of $AB/BC/CA$
 ## Matrices
@@ -49,4 +49,4 @@
 * $AA^{-1} =A^{-1}A=I$
 * $(AB)^{-1}=B^{-1}A^{-1}$
 * Cross product $\Rightarrow$ Matrix $\times$ Vector
-    - $\vec{a}\times\vec{b}=A^*b=\begin{pmatrix}0&-z_a&y_a\\z_a&0&-x_a\\-y_a&x_a&0\\\end{pmatrix}\begin{pmatrix}x_b\\y_b\\z_b\end{pmatrix}$
+    - $\vec{a}\times\vec{b}=A^*b=\begin{pmatrix}0&-{z_a}&y_a\\z_a&0&-{x_a}\\-{y_a}&x_a&0\\\end{pmatrix}\begin{pmatrix}x_b\\y_b\\z_b\end{pmatrix}$
