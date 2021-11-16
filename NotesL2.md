@@ -17,7 +17,7 @@
 * 向量的定义，归一化，求和，坐标表示，长度
 * ***Dot product***
     - $\vec{a}\cdot\vec{b}=\parallel\vec{a}\parallel\parallel\vec{b}\parallel\cos\theta$
-    - $\cos\theta=\hat{a}\cdot\hat{b}$ (*for unit vectors*)
+    - $\cos\theta=\hat{a}\cdot\hat{b}$ *(for unit vectors)*
 * Dot product in Graphics
     - Find angle between vectors($\cos\theta$ between light src & surface)
     - Find **projection** of one vector on another
@@ -26,7 +26,7 @@
     - Determind fowward / backward(dot product > or < 0)
 * Dot product for projection
     - $\vec{b}_\perp$ : **Projection** of $\vec{b}$ onto $\vec{a}$
-    - $\vec{b}_\perp=$ $k\cdot\hat{a}=$ $\parallel\vec{b}_\perp\parallel\cdot\hat{a}=$ $\parallel\vec{b}\parallel\cos\theta\cdot\hat{a}$
+    - $\vec{b}_\perp=k\hat{a}=\parallel\vec{b}_\perp\parallel\hat{a}=\parallel\vec{b}\parallel\cos\theta\cdot\hat{a}$*(along $\hat{a}$)*
 * ***Cross product***
     - $\parallel\vec{a}\times\vec{b}\parallel=\parallel\vec{a}\parallel\parallel\vec{b}\parallel\sin\phi$
     - Cross product is **orthogonal** to 2 initial vectors
@@ -49,4 +49,4 @@
 * $AA^{-1} =A^{-1}A=I$
 * $(AB)^{-1}=B^{-1}A^{-1}$
 * Cross product $\Rightarrow$ Matrix $\times$ Vector
-$$\vec{a}\times\vec{b}=A^*b=\begin{pmatrix}0&-{z_a}&y_a\\z_a&0&-{x_a}\\-{y_a}&x_a&0\\\end{pmatrix}\begin{pmatrix}x_b\\y_b\\z_b\end{pmatrix}$$
+    - $\vec{a}\times\vec{b}=A^*b=\begin{pmatrix}0&-z_a&y_a\\z_a&0&-x_a\\-y_a&x_a&0\\\end{pmatrix}\begin{pmatrix}x_b\\y_b\\z_b\end{pmatrix}$
