@@ -28,7 +28,7 @@ int main(){
     std::cout << i * j << std::endl;
     std::cout << i * v << std::endl;
 
-    // TO USE Homogeneous
+    // TO USE Homogeneous to calculate P'
     Eigen::Vector3f P(2,1,1);//homo
     Eigen::Matrix3f M;
 
