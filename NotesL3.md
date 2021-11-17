@@ -1,5 +1,7 @@
 # GAMES101-Lecture3
 ## Transformation
+>### References
+>* Chapter6 Transformation Matrices(6.1, 6.3)
 
 ***
 ## Main Topics
