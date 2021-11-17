@@ -26,7 +26,19 @@
   * ***Euler Angles***
 
 * ### Rodrigues' Rotation Fomula
-  * $\mathbf{R}(\mathbf{n},\alpha)=\cdots$
+  * $\mathbf{R}(\mathbf{n},\alpha)=\cdots=\cos(\alpha)\mathbf{I}+(1-\cos(\alpha))\mathbf{n}\mathbf{n}^T+\sin(\alpha)\begin{pmatrix}0&-n_z&n_y\\n_z&0&-n_x\\-n_y&n_x&0\end{pmatrix}$
+    * $\mathbf{n}$ 默认过 $O(0,0,0)$
+    * $(\mathbf{v}\cdot\mathbf{k})\mathbf{k}=\mathbf{k}(\mathbf{v}\cdot\mathbf{k})=\mathbf{k}(\mathbf{k}^T\cdot\mathbf{v})$
+
+![Rodrigues.png](https://i.loli.net/2021/11/18/YENoKLIbBMDehm4.png)
+
+
+
+
+
+
+
+
 * ### Reflection
     - $\begin{bmatrix}x'\\y'\end{bmatrix}=\begin{bmatrix}-1&0\\0&1\end{bmatrix}\begin{bmatrix}x\\y\end{bmatrix}$
     - Y ( and X ) axis symmetry
