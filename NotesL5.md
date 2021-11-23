@@ -24,10 +24,55 @@
 ![fovY.png](https://i.loli.net/2021/11/21/T5yBx8bnsVdMPHh.png)
 
 * ### Canonical Cube to Screen
-  * Compose any 3D rotation from $\mathbf{R}_x,\mathbf{R}_y,\mathbf{R}_z$
-  * ***Euler Angles***
+  * Screen : array of pixels
+    * Resolution : size of array
+    * raster display
+  * Raster == screen in German
+    * Rasterize : draw onto the screen
+  * Pixel : short for ***picture element***
+    * pixel is little aquare with uniform color
+    * Color is mixture of $(red, green, blue)$
+  * Screen space
+    * Pixel indices form : $(x, y)$
+      * Pixel indices are from $(0, 0)$ to $(width-1, height-1)$
+      * Pixel is centered at $(x+0.5, y+0.5)$
+      * Screen covers from $(0, 0)$ to $(width, height)$
+    * Transform in $xy$ plane : $[-1, 1]^2$ to $[0, width]\times[0, height]$
+    * Viewport transform matrix
+      * $M_{viewport}=\begin{pmatrix}\frac{width}{2}&0&0&\frac{width}{2}\\0&\frac{height}{2}&0&\frac{height}{2}\\0&0&1&0\\0&0&0&1\end{pmatrix}$
 
-* ### Rodrigues' Rotation Fomula
-  * $\mathbf{R}(\mathbf{n},\alpha)=\cdots=\cos(\alpha)\mathbf{I}+(1-\cos(\alpha))\mathbf{n}\mathbf{n}^T+\sin(\alpha)\begin{pmatrix}0&-n_z&n_y\\n_z&0&-n_x\\-n_y&n_x&0\end{pmatrix}$
-    * $\mathbf{n}$ 默认过 $O(0,0,0)$
-    * $(\mathbf{v}\cdot\mathbf{k})\mathbf{k}=\mathbf{k}(\mathbf{v}\cdot\mathbf{k})=\mathbf{k}(\mathbf{k}^T\cdot\mathbf{v})$
+![pixel.png](https://i.loli.net/2021/11/22/qATuFvyH7Betbjp.png)
+
+## Rasterization
+
+* ### Why Triangles
+  * Most basic polygon
+    * Break up other polygons
+  * Unique properties
+    * Guaranteed to be planar
+    * Well-defined interior
+    * Well-defined method for interpolating values at vertices over triangle (barycentric interpolation) ：**(可内部插值)**
+
+* ### Sampling : Pixel & Triangle
+  * Evaluate a func at a point ***(discretize : 离散)***
+    * sample time (1D), area/direction (2D), volume (3D) etc
+  * Define func **$inside(tri, x, y)$**
+    * $inside(t, x, y)=\begin{cases}1,\ \ (x,y)\ \ in triangle\ \ t\\0,\ \ otherwise\end{cases}$
+  
+    ```cpp {.line-numbers}
+      for (int x = 0; x != xmax; ++x)
+        for (int y = 0; y != ymax; ++y)
+          image[x][y] = inside(tri, x+0.5, y+0.5);
+    ```
+
+  * **3** Cross product to makesure inside/outside
+  * Edge Cases
+    * Ignored(here) or specially(API)
+  * Using a bounding box
+    * avoid checking all pixels on screen
+  * Incremental Triangle Traversal
+    * 类似扫描线, 计算左右边界
+    * faster
+    * thin and rotated triangles
+* ### Aliasing (Jaggies)
+  * 走样锯齿问题
