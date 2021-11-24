@@ -91,6 +91,30 @@
 
 ## Visibility / occlusion
 
-* ### Title
-  * title1
-    * title1.1
+* ### Painter's Algorithm
+  * from back to front
+  * Overwrite framebuffer
+    * 深度计算与排序 : $O(nlogn)$
+    * unresolvable depth order : 3 triangles overlap
+
+* ### Z-Buffer
+  * Store current min.(z-value) for each sample pixel
+  * An additional buffer for depth values
+    * frame buffer stores ***color values***
+    * depth buffer (z-buffer) stores ***depth***
+  * Z : smaller z means closer
+
+* ### Z-Buffer Algorithm
+  * Initialize depth buffer to $\infty$
+  * During rasterization
+    * Loop
+
+    ```cpp {.line-numbers}
+      for (each triangle T)
+        for (each sample pixel (x,y,z) in T)
+          if (z < zbuffer[x,y]) // closest sample so far
+            framebuffer[x,y] = rgb; // update color
+            zbuffer[x,y] = z; // update depth
+          else
+            ;
+    ```
