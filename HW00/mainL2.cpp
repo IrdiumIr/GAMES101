@@ -1,6 +1,6 @@
 #include<cmath>
-#include"C:\VSCodeCpp\eigen-3.4.0\Eigen/Core"
-#include"C:\VSCodeCpp\eigen-3.4.0\Eigen/Dense"
+#include"C:\VSCodeCpp\eigen-3.4.0\Eigen\Core"
+#include"C:\VSCodeCpp\eigen-3.4.0\Eigen\Dense"
 #include<iostream>
 
 int main(){
